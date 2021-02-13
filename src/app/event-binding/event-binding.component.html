@@ -1,0 +1,45 @@
+<section>
+  <button mat-button color="primary" (click)="save()">Save</button>
+  <button mat-button color="primary">{{btnName}}</button>
+</section>
+<section>
+  <button mat-button color="primary" [disabled]="!btnEnable">BUTTON 1</button>
+  <button mat-button color="primary" [disabled]="!btnEnable">BUTTON 2</button>
+  <button mat-button color="warn" (click)="disable()" [disabled]="!btnEnable">Disable</button>
+  <mat-progress-spinner color="primary" [mode]="spinnerMode" value="0">
+  </mat-progress-spinner>
+</section>
+<section>
+  <p>
+    <mat-checkbox color="warn" (change)="cbChange($event)">Disable / Enable</mat-checkbox>
+  </p>
+  <p>
+    <mat-form-field>
+      <mat-select matNativeControl required [disabled]="selectDisabled" (selectionChange)="selectChange($event)">
+        <mat-option value="volvo">Volvo</mat-option>
+        <mat-option value="saab">Saab</mat-option>
+        <mat-option value="mercedes">Mercedes</mat-option>
+        <mat-option value="audi">Audi</mat-option>
+      </mat-select>
+    </mat-form-field>
+  </p>
+  <p>
+    <mat-card class="mycard">
+      <mat-card-content>
+        <p>Selected Car: {{ selectedOption }}</p>
+      </mat-card-content>
+    </mat-card>
+  </p>
+</section>
+<section>
+
+  <section>
+
+    <input *ngIf="name" matInput placeholder="Name" (input)="inputEvent($event)" [value]="name">
+    <div *ngIf="!name">loading</div>
+    <mat-progress-spinner color="primary" [mode]="spinnerMode2" value="0">
+    </mat-progress-spinner>
+
+  </section>
+  <p>new name: {{ name }} </p>
+</section>
