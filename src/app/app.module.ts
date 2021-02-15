@@ -16,7 +16,16 @@ import {MatSelectModule} from '@angular/material/select';
 import { FormsModule } from '@angular/forms';
 import { TwoWayDatabindingComponent } from './components/two-way-databinding/two-way-databinding.component';
 import { ButtonCustomComponent } from './components/button-custom/button-custom.component';
-
+import { NgStyleComponent } from './components/ng-style/ng-style.component';
+import {MatRadioModule} from '@angular/material/radio';
+import { NgClassComponent } from './components/ng-class/ng-class.component';
+import { NgIfComponent } from './components/ng-if/ng-if.component';
+import { NgForComponent } from './components/ng-for/ng-for.component';
+import {MatListModule} from '@angular/material/list';
+import { MatDivider, MatDividerModule } from '@angular/material/divider';
+import { NgForFormComponent } from './components/ng-for-form/ng-for-form.component';
+import { NgSwitchComponent } from './components/ng-switch/ng-switch.component';
+import {MatProgressBarModule} from '@angular/material/progress-bar';
 @NgModule({
   declarations: [
     AppComponent,
@@ -25,6 +34,12 @@ import { ButtonCustomComponent } from './components/button-custom/button-custom.
     EventBindingComponent,
     TwoWayDatabindingComponent,
     ButtonCustomComponent,
+    NgStyleComponent,
+    NgClassComponent,
+    NgIfComponent,
+    NgForComponent,
+    NgForFormComponent,
+    NgSwitchComponent,
 
   ],
   imports: [
@@ -37,7 +52,11 @@ import { ButtonCustomComponent } from './components/button-custom/button-custom.
     MatProgressSpinnerModule,
     MatCheckboxModule,
     MatSelectModule,
-    FormsModule
+    FormsModule,
+    MatRadioModule,
+    MatListModule,
+    MatDividerModule,
+    MatProgressBarModule
   ],
   providers: [],
   bootstrap: [AppComponent]
