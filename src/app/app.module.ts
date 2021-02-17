@@ -26,6 +26,10 @@ import { MatDivider, MatDividerModule } from '@angular/material/divider';
 import { NgForFormComponent } from './components/ng-for-form/ng-for-form.component';
 import { NgSwitchComponent } from './components/ng-switch/ng-switch.component';
 import {MatProgressBarModule} from '@angular/material/progress-bar';
+import { NgTemplateComponent } from './components/ng-template/ng-template.component';
+import { NgContainerComponent } from './components/ng-container/ng-container.component';
+import { NgContentComponent } from './components/ng-content/ng-content.component';
+import { InputBindingComponent } from './components/input-binding/input-binding.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -40,6 +44,10 @@ import {MatProgressBarModule} from '@angular/material/progress-bar';
     NgForComponent,
     NgForFormComponent,
     NgSwitchComponent,
+    NgTemplateComponent,
+    NgContainerComponent,
+    NgContentComponent,
+    InputBindingComponent,
 
   ],
   imports: [
