@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { Client } from './client/client.model';
 
 @Component({
   selector: 'app-input-binding',
@@ -7,7 +8,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class InputBindingComponent implements OnInit {
 
-  constructor() { }
+  @Input()
+  name: string;
+
+  clients: Client[];
+
+  constructor() {
+    this.clients = [
+      {id:1, name:"Bob", age:33},
+      {id:2, name:"Jon", age:22},
+      {id:3, name:"Lea", age:19}
+    ]
+  }
 
   ngOnInit(): void {
   }

@@ -30,6 +30,15 @@ import { NgTemplateComponent } from './components/ng-template/ng-template.compon
 import { NgContainerComponent } from './components/ng-container/ng-container.component';
 import { NgContentComponent } from './components/ng-content/ng-content.component';
 import { InputBindingComponent } from './components/input-binding/input-binding.component';
+import { ClientComponent } from './components/input-binding/client/client.component';
+import { EventComponent } from './components/event/event.component';
+import { ChildItemComponent } from './components/event/child-item/child-item.component';
+import { ClientsComponent } from './components/clients/clients.component';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { ItemClientComponent } from './components/clients/item-client/item-client.component';
+import { ParentChildComponent } from './components/parent-child/parent-child.component';
+import { TimerComponent } from './components/parent-child/timer/timer.component';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -48,6 +57,13 @@ import { InputBindingComponent } from './components/input-binding/input-binding.
     NgContainerComponent,
     NgContentComponent,
     InputBindingComponent,
+    ClientComponent,
+    EventComponent,
+    ChildItemComponent,
+    ClientsComponent,
+    ItemClientComponent,
+    ParentChildComponent,
+    TimerComponent,
 
   ],
   imports: [
@@ -64,7 +80,8 @@ import { InputBindingComponent } from './components/input-binding/input-binding.
     MatRadioModule,
     MatListModule,
     MatDividerModule,
-    MatProgressBarModule
+    MatProgressBarModule,
+    MatFormFieldModule
   ],
   providers: [],
   bootstrap: [AppComponent]

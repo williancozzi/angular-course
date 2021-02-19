@@ -1,0 +1,25 @@
+<div>
+  <button mat-raised-button color="primary"
+  (click)="stopwatch.start()" style="margin: 10px;">Start</button>
+  <button mat-raised-button color="accent"
+  (click)="stopwatch.stop()" style="margin: 10px;">Stop</button>
+  <button mat-raised-button color="warn"
+  (click)="stopwatch.reset()" style="margin: 10px;">Reset</button>
+</div>
+
+<app-timer #stopwatch>
+</app-timer>
+
+<div>
+  <button mat-raised-button color="primary"
+  (click)="start()" style="margin: 10px;">Start</button>
+  <button mat-raised-button color="accent"
+  (click)="stop()" style="margin: 10px;">Stop</button>
+  <button mat-raised-button color="warn"
+  (click)="reset()" style="margin: 10px;">Reset</button>
+</div>
+
+<app-timer #stopwatch2>
+</app-timer>
+
+<p #myP>Hi</p>
