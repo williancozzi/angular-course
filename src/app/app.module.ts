@@ -38,6 +38,10 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { ItemClientComponent } from './components/clients/item-client/item-client.component';
 import { ParentChildComponent } from './components/parent-child/parent-child.component';
 import { TimerComponent } from './components/parent-child/timer/timer.component';
+import { OnChangesComponent } from './components/on-changes/on-changes.component';
+import { NameChangesComponent } from './components/on-changes/name-changes/name-changes.component';
+import { InterceptingComponent } from './components/intercepting/intercepting.component';
+import { NameComponent } from './components/intercepting/name/name.component';
 
 @NgModule({
   declarations: [
@@ -64,6 +68,10 @@ import { TimerComponent } from './components/parent-child/timer/timer.component'
     ItemClientComponent,
     ParentChildComponent,
     TimerComponent,
+    OnChangesComponent,
+    NameChangesComponent,
+    InterceptingComponent,
+    NameComponent,
 
   ],
   imports: [
@@ -81,7 +89,7 @@ import { TimerComponent } from './components/parent-child/timer/timer.component'
     MatListModule,
     MatDividerModule,
     MatProgressBarModule,
-    MatFormFieldModule
+    MatFormFieldModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
